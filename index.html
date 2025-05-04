@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize style  file-->
+    <link rel="stylesheet" href="style/normalize.css">
+    <!-- main style  file-->
+    <link rel="stylesheet" href="style/main.css">
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imgs/SaulDesign.svg" alt="">
+            </div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- Start Home -->
+    <div class="home section" id="home">
+        <div class="container">
+            <div class="description">
+                <img src="imgs/home-slash.svg" alt="">
+                <h1>Front-end <br><span>Developer</span></h1>
+                <div class="buttons">
+                    <a href="#contact">Hire me</a>
+                    <a href="#portfolio">Projects</a>
+                </div>
+            </div>
+            <img src="imgs/home-page-img.svg" alt="">
+        </div>
+    </div>
+    <!-- End Home -->
+    <!-- Start About -->
+    <div class="about section" id="about">
+        <div class="container">
+            <img src="imgs/sound-about.svg" alt="" class="sound">
+            <img src="imgs/lightbulb-about.svg" alt="" class="light">
+            <div class="description">
+                <h2>About <span>me</span></h2>
+                <p>Hi! I'm Sohaib, an entry-level front-end developer passionate about turning image templates into real web pages using just HTML and CSS. I’m eager to learn and grow in the world of web development. Let's build something awesome together!</p>
+                <img src="imgs/slash-about.svg" alt="">
+            </div>
+            <img src="imgs/about-img.svg" alt="" class="main">
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Project Page -->
+    <div class="project-page section" id="portfolio">
+        <div class="container">
+            <h2>My recent <span>works</span></h2>
+            <div class="templates">
+                <a href="https://klauspopee.github.io/Positivus-Landing-Page/"><img src="imgs/Cover.png" alt=""></a>
+                <a href="https://klauspopee.github.io/Whitepace-Landing-page/"><img src="imgs/Thumbnail.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Project Page -->
+    <!-- Start Contact -->
+    <div class="contact section" id="contact">
+        <div class="container">
+            <div class="description">
+                <h2>Got a project in <br><span>mind?</span></h2>
+                <img src="imgs/contact-img.svg" alt="" class="main">
+                <img src="imgs/slash-about.svg" alt="" class="slash">
+            </div>
+            <img src="imgs/mail.svg" alt="" class="mail">
+            <img src="imgs/keyboard.svg" alt="" class="keyboard">
+            <div class="email-form">
+                <form action="">
+                    <div class="your-name">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="your-email">
+                        <label for="email">Your email</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="your-message">
+                        <label for="message">Your message</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <button type="submit">Send message <img src="imgs/send.svg" alt=""></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Contact -->
+</body>
+</html>

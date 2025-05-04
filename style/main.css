@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --blue:#00ADB5;
+    --grey:#393E46;
+    --black:#222831;
+    --white:#EEEEEE;
+    --h1-desktop:96px;
+    --h1-tablet:64px;
+    --h1-mobile:54px;
+    --h2-desktop:64px;
+    --h2-tablet:54px;
+    --h2-mobile:36px;
+    --p:18px
+}
+/*Start responsive */
+/* mobile */
+@media (max-width:320px) {
+    .container {
+        padding: 0 10px;
+    }
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    h1 {
+        font-size: var(--h1-mobile);
+    }
+    h2 {
+        font-size: var(--h2-mobile);
+    }
+}
+@media (min-width:321px) {
+    .container {
+        padding: 0 20px;
+    }
+    .section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    h1 {
+        font-size: var(--h1-mobile);
+    }
+    h2 {
+        font-size: var(--h2-mobile);
+    }
+}
+/* tablet */
+@media (min-width:769px) {
+    .container {
+        padding: 0 32px;
+    }
+    .section {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    h1 {
+        font-size: var(--h1-tablet);
+    }
+    h2 {
+        font-size: var(--h2-tablet);
+    }
+}
+/* desktop */
+@media (min-width:1401px) {
+    .container {
+        padding: 0 220px;
+    }
+    .section {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    h1 {
+        font-size: var(--h1-desktop);
+    }
+    h2 {
+        font-size: var(--h2-desktop);
+    }
+}
+/*End responsive */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--black);
+    width: 100%;    
+}
+p {
+    font-size: var(--p);
+}
+/* Start  Header*/
+header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .links {
+    display: flex;
+    gap: 48px;
+}
+header .container .links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+header .container .links a:hover {
+    color: var(--blue);
+}
+header .container .logo {
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    header .container {
+
+    }
+    header .container .links {
+        display: none;
+    }
+}
+/* End Header */
+/* Start Home */
+.home .container {
+    display: flex;
+    justify-content: space-between;
+}
+.home .container img {
+    max-width: 100%;
+}
+@media (min-width:768px) {
+    .home .container > img {
+        width: 50%;
+    }
+}
+.home .container .description {
+    margin-left: 100px;
+    position: relative;
+    min-width: 30%;
+}
+.home .container .description  img{
+    position: absolute;
+    left: -80px;
+    top: 100px;
+}
+.home .container .description h1 {
+    color: var(--white);
+}
+.home .container .description h1 span {
+    color: var(--blue);
+}
+.home .container .description .buttons {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+}
+.home .container .description .buttons a {
+    width: fit-content;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 32px;
+    font-size: var(--p);
+    font-weight: bold;
+    border-radius: 24px;
+    text-shadow: 0 5px 15px black;
+}
+.home .container .description .buttons a:first-child {
+    background-color: var(--blue);
+}
+.home .container .description .buttons a:last-child {
+    background-color: var(--grey);
+} 
+@media (max-width:767px) {
+    .home .container {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .home .container .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home .container .description .buttons {
+        gap: 10px;
+    }
+    .home .container .description img {
+        display: none;
+    }
+}
+/* End Home */
+/* Start About */
+.about .container {
+    display: flex;
+    position: relative;
+}
+@media (min-width:768px) {
+    .about .container img.main {
+        width: 60%;
+    }
+}
+.about .container .description{
+    position: relative;
+}
+.about .container .description h2 {
+    color: white;
+}
+.about .container .description h2 span {
+    color: var(--blue);
+}
+.about .container .description p {
+    line-height: 1.8;
+    color: rgb(238 238 238 / 75%);
+}
+.about .container .description img {
+    position: absolute;
+    left: 30%;
+}
+.about .container .sound {
+    position: absolute;
+    top: -100px;
+}
+.about .container .light {
+    position: absolute;
+    left: 400px;
+}
+@media (max-width:1400px) {
+    .about .container .sound,
+    .about .container .light {
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .about .container {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+    }
+    .about .container .description img {
+        display: none;
+    }
+}
+/* End About */
+/* Start Project Page */
+.project-page {
+    background-image: url(../imgs/doodle\ items.svg);
+}
+.project-page .container {
+    text-align: center;
+}
+.project-page .container h2 {
+    color: var(--white);
+}
+.project-page .container h2 span {
+    color: var(--blue);
+}
+.project-page .container .templates {
+    display: flex;
+    margin-top: 100px;
+    gap: 48px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-page .container .templates a {
+    padding: 60px 50px;
+    background-color: rgb(57 62 70 / 50%);
+    border-radius: 16px;
+    margin: 0;
+
+}
+.project-page .container .templates a img {
+    width: 265px;
+    height: 158px;
+    max-width: 100%;
+}
+@media (max-width:475px) {
+    .project-page .container .templates a {
+        padding: 20px 10px;
+    }
+}
+/* End Project Page */
+/* Start contact */
+.contact .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact .container > img {
+    position: absolute;
+}
+.contact .container img.mail {
+    top: 110%;
+    right: 10%;
+}
+.contact .container img.keyboard {
+    top: -30%;
+    right: 30%;
+
+}
+.contact .container .description {
+    position: relative;
+}
+.contact .container .description h2 {
+    color: var(--white);
+}
+.contact .container .description h2 span {
+    color: var(--blue);
+}
+.contact .container .description img.main {
+    margin-left: 150px;
+    max-width: 100%;
+}
+.contact .container .description img.slash {
+    position: absolute;
+    left: 0;
+    transform: rotate(180deg);
+}
+.contact .container .email-form form{
+    /* width: 600px;
+    height: 510px; */
+    align-self: flex-end;
+    display: grid;
+    grid-template-rows: repeat(4, minmax(auto, 90px)) auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.contact .container .email-form form .your-name {
+    grid-row: 1;
+}
+.contact .container .email-form form .your-message {
+    grid-row-start: span 3;
+    grid-column: span 2;
+}
+.contact .container .email-form form {
+    position: relative;
+}
+.contact .container .email-form form div {
+    display: flex;
+    flex-direction: column;
+}
+.contact .container .email-form form div input,
+.contact .container .email-form form div textarea,
+.contact .container .email-form form div button {
+    padding: 16px 24px;
+    border-radius: 16px;
+    color: var(--white);
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: rgb(57 62 70 / 50%);
+    caret-color: var(--blue);
+}
+.contact .container .email-form form div textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+.contact .container .email-form form div label {
+    font-size: 18px;
+    color: var(--white);
+    line-height: 1.8;
+    display: block;
+}
+.contact .container .email-form form  button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    background-color: var(--blue);
+    padding: 16px 24px;
+    border-radius: 16px;
+    color: var(--white);
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width:992px) {
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:767px) {
+    .contact .container .email-form form .your-name {
+        grid-row:1 ;
+        grid-column: span 2;
+    }
+    .contact .container .email-form form .your-email {
+        grid-row: 2;
+        grid-column: span 2 ;
+    }
+    .contact .container .email-form form .your-message {
+        grid-column: 1 / -1;
+        grid-row: 3 / 5;
+    }
+    .contact .container .email-form form .your-message textarea {
+        width: 100%;
+        height: 100%;
+    }
+    .contact .container .email-form form div input {
+        width: 100%;
+    }
+    .contact .container .description img.main {
+        margin-left: 0;
+    }
+    .contact .container > img,
+    .contact .container .description img.slash {
+        display: none;
+    }
+    .contact .container .email-form form button {
+        position: absolute;
+        bottom: -70px;
+    }
+}
+/* End contact */
