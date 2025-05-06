@@ -418,3 +418,16 @@ header .container .logo {
     }
 }
 /* End contact */
+/* Start footer */
+footer .container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+footer .container a {
+    padding: 10px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    display: flex;
+}
+/* End footer */
